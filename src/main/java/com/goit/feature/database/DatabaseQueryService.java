@@ -83,7 +83,7 @@ public class DatabaseQueryService {
         return workerList;
     }
 
-    public List<ProjectPrices> printProjectPrices() throws IOException, SQLException {
+    public List<ProjectPrices> getProjectPrices() throws IOException, SQLException {
         List<ProjectPrices> projectPricesList = new ArrayList<>();
         String projectPricesFileName = new Prefs().getString(Prefs.SELECT_PROJECT_PRICES_FILE_PATH);
         String selectSql = Files.readString(Paths.get(projectPricesFileName));

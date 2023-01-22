@@ -18,7 +18,7 @@ public class App {
         List<MaxSalaryWorker> maxSalaryWorkerList = databaseQueryService.findMaxSalaryWorker();
         System.out.println("maxSalaryWorker = " + maxSalaryWorkerList);
 
-        List<ProjectPrices> projectPricesList = databaseQueryService.printProjectPrices();
+        List<ProjectPrices> projectPricesList = databaseQueryService.getProjectPrices();
         System.out.println("projectPrices = " + projectPricesList);
 
         List<YoungestEldestWorker> youngestEldestWorkerList = databaseQueryService.findYoungestEldestWorker();
